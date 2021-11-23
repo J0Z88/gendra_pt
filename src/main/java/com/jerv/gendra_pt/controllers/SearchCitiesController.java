@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.jerv.gendra_pt.services.SearchCitiesService;
 import com.jerv.gendra_pt.util.SuggestionsResponse;
 
+import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -30,6 +31,11 @@ public class SearchCitiesController {
 	@Autowired
 	private SearchCitiesService service;
 
+	@Hidden
+	@GetMapping("/")
+	public String init() {
+		return "Hola copia y pega el enlace en el navegador para ir a la documentacion: https://github.com/J0Z88/gendra_pt" ;
+	}
 	/**
 	 * Endpoint para hacer busquedas de sugerencias de ciudades
 	 * 

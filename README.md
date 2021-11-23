@@ -19,7 +19,7 @@ curl -X GET https://gendrapt.uc.r.appspot.com/suggestions?q=londo&latitude=43.70
 
 Para probar el servicio por navegador web:
 
-https://gendrapt.uc.r.appspot.com/suggestions?q=londo&latitude=43.70011&longitude=-81.23304
+https://gendrapt.uc.r.appspot.com/suggestions?q=londo&latitude=43.70011&longitude=-79.4163
 
 Tambien se puede probar con Swagger en la siguiente liga:
 
